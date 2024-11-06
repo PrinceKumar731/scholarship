@@ -1,0 +1,127 @@
+body {
+  background: url(vecteezy_camouflage-seamless-pattern-green-black-and-khaki-color_13800553.jpg) no-repeat center center fixed;
+  background-size: cover;
+  color: #eee; 
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: rgba(34, 34, 34, 0.8); 
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+  padding: 10px 0;
+}
+
+h1 {
+  color: #008000; 
+  font-size: 3em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+
+h1::after {
+  content: '';
+  display: block;
+  width: 60%;
+  height: 3px;
+  background-color: #008000;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+.filter-options {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  background-color: #333;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.filter-options label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.filter-options select {
+  padding: 8px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  background-color: #444;
+  color: #eee;
+  transition: all 0.3s ease;
+}
+
+.filter-options select:hover {
+  background-color: #555;
+  border-color: #008000;
+}
+
+.scholarship-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.scholarship-item {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Pop-out effect on hover */
+.scholarship-item:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 6px 15px rgba(0, 128, 0, 0.4);
+}
+
+.scholarship-item h3 {
+  color: #008000;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #008000;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.scholarship-item p {
+  font-size: 1em;
+  color: #ccc;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.scholarship-item a {
+  display: inline-block;
+  padding: 8px 15px;
+  background-color: #008000; 
+  color: #eee;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.scholarship-item a:hover {
+  background-color: #006400; 
+}
